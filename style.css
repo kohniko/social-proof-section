@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	color: #512051;
+	text-align: center;
+	font-size: 3rem;
+	font-style: normal;
+	font-weight: 700;
+	padding-top: 100px;
+}
+
+.text {
+	color: #927B91;
+	text-align: center;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: -0.633px;
+}
+
+.box {
+	text-align: center;
+	height: 266px;
+}
+
+.star1 {
+	padding-top: 20px;
+	height: 80px;
+}
+
+.Reviews {
+	color: #512051;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.colton,
+.irene,
+.anne {
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	background: #512051;
+	width: 350px;
+	color: white;
+}
+
+img {
+	border-radius: 50%;
+}
+
+.textname {
+	display: flex;
+	flex-direction: column;
+}
+.profile {
+	display: flex;
+	flex-direction: column;
+	width: 40px;
+	height: 40px;
+	margin-top: 30px;
+	margin-left: 30px;
+}
