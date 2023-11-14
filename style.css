@@ -8,6 +8,7 @@
 
 body {
     font-family: 'League Spartan', sans-serif;
+	background: url(images/bg-pattern-top-mobile.svg) no-repeat;
 }
 
 .container {
@@ -106,9 +107,9 @@ img {
 	border-radius: 50%;
 }
 
-.textname {
-	display: flex;
-	flex-direction: column;
+.textname .span {
+	padding-left: 150px;
+	padding-top: 10px;
 }
 .profile {
 	display: flex;
@@ -116,5 +117,5 @@ img {
 	width: 40px;
 	height: 40px;
 	margin-top: 30px;
-	margin-left: 30px;
+	margin-left: 40px;
 }
