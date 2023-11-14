@@ -39,12 +39,32 @@ h1 {
 .box {
 	text-align: center;
 	height: 266px;
+	width: 339px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .star1 {
 	padding-top: 20px;
 	height: 80px;
-	background-color: rgb(235, 235, 235);
+	margin-bottom: 15px;
+	background-color: #f7f2f7;
+	border-radius: 8px;
+}
+.star2 {
+	padding-top: 20px;
+	height: 80px;
+	margin-bottom: 15px;
+	background-color: #f7f2f7;
+	border-radius: 8px;
+}
+.star3 {
+	padding-top: 20px;
+	height: 80px;
+	margin-bottom: 15px;
+	background-color: #f7f2f7;
+	border-radius: 8px;
 }
 
 .Reviews {
@@ -73,8 +93,13 @@ h1 {
 	font-size: 17px
 }
 
-.coltontexte {
-	
+.coltontext {
+	color: #ffffff;
+	width: 263px;
+	display: flex;
+	margin-left: 50px;
+	font-size: 17px;
+	line-height: 22px;
 }
 
 img {
