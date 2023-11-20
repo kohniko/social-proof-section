@@ -1,121 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
+    background: url(images/bg-pattern-top-mobile.svg) top no-repeat, url(images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
     font-family: 'League Spartan', sans-serif;
-	background: url(images/bg-pattern-top-mobile.svg) no-repeat;
 }
 
 .container {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-	color: #512051;
-	text-align: center;
-	font-size: 3rem;
-	font-style: normal;
-	font-weight: 700;
-	padding-top: 100px;
+    color: #512051;
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 100px;
+    margin-bottom: 30px;
 }
 
-.text {
-	color: #927B91;
-	text-align: center;
-	font-size: 19px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 25px;
-	letter-spacing: -0.633px;
+header p {
+    color: #927B91;
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .box {
-	text-align: center;
-	height: 266px;
-	width: 339px;
-	margin: auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 327px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #F7F2F7;
 }
 
-.star1 {
-	padding-top: 20px;
-	height: 80px;
-	margin-bottom: 15px;
-	background-color: #f7f2f7;
-	border-radius: 8px;
-}
-.star2 {
-	padding-top: 20px;
-	height: 80px;
-	margin-bottom: 15px;
-	background-color: #f7f2f7;
-	border-radius: 8px;
-}
-.star3 {
-	padding-top: 20px;
-	height: 80px;
-	margin-bottom: 15px;
-	background-color: #f7f2f7;
-	border-radius: 8px;
+.star {
+    display: flex;
+    flex-direction: row;
+    margin-top: -2%;
+    margin-bottom: 10px;
 }
 
-.Reviews {
-	color: #512051;
-	font-size: 17px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
+.box img {
+    margin-left: 7px;
+    width: 16px;
+    height: 16px;
+}
+
+.box p {
+    color: #512051;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .colton,
 .irene,
 .anne {
-	display: flex;
-	flex-direction: column;
-	border-radius: 8px;
-	background: #512051;
-	width: 350px;
-	height: 250px;
-	color: white;
-	margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: #512051;
+    width: 350px;
+    height: 248px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 17px;
 }
 
-.verif {
-	color: #EE69A4;
-	font-size: 17px
+.container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
-.coltontext {
-	color: #ffffff;
-	width: 263px;
-	display: flex;
-	margin-left: 50px;
-	font-size: 17px;
-	line-height: 22px;
-}
-
-img {
-	border-radius: 50%;
-}
-
-.textname .span {
-	padding-left: 150px;
-	padding-top: 10px;
-}
 .profile {
-	display: flex;
-	flex-direction: column;
-	width: 40px;
-	height: 40px;
-	margin-top: 30px;
-	margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    margin-left: 30px; 
+    margin-bottom: -20px;
+}
+
+.profile span {
+    margin: auto 20px;
+}
+
+.profile p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #EE69A4;
+}
+
+.container blockquote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 5%;
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 375px) {
+    body {
+        background: url(images/bg-pattern-top-desktop.svg) top no-repeat, url(images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
