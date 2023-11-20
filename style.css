@@ -21,7 +21,6 @@ body {
 
 h1 {
     color: #512051;
-    text-align: center;
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
@@ -31,7 +30,6 @@ h1 {
 
 header p {
     color: #927B91;
-    text-align: center;
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 500;
@@ -106,8 +104,6 @@ header p {
     margin: auto;
     margin-left: 30px; 
     margin-bottom: -20px;
-    /* margin-top: 30px;
-    margin-left: 30px; */
 }
 
 .profile span {
@@ -129,8 +125,15 @@ header p {
     margin: auto 5%;
     font-size: 1.2rem;
 }
-
-@media only screen and (min-width: 376px) {
+@media only screen and (max-width: 380px) {
+	h1 {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+}
+@media only screen and (min-width: 380px) {
     body {
         background: url(images/bg-pattern-top-desktop.svg) top no-repeat, url(images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
     }
@@ -145,8 +148,17 @@ header p {
     .global {
         display: flex;
         flex-direction: row;
-        /* justify-content: space-evenly; */
     }
+
+	.title {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+		width: 25%;
+		margin-top: 118px;
+		margin-left: 165px;
+	}
 
     .boxes {
         display: flex;
@@ -154,6 +166,8 @@ header p {
         justify-content: center;
         padding: 2%;
         margin-bottom: 20px;
+		margin-left: 250px;
+		margin-top: 145px;
     }
     
     .box {
@@ -164,8 +178,9 @@ header p {
         width: 445px;
         margin: auto;
         margin-bottom: 20px;
+		float: right;
         border-radius: 10px;
-        background-color: #ccc;
+        background-color: #F7F2F7;
     }
     
     .box:nth-child(1) {
@@ -180,15 +195,12 @@ header p {
         display: flex;
         flex-direction: row;
         margin-top: auto;
+		
         margin-bottom: auto;
     }
 
     .container {
         display: flex;
         flex-direction: row;
-    }
-
-    .irene {
-        
     }
 }
